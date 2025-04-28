@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пассажиры Титаника</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Пассажиры Титаника</h1>
+        <section class="search-container">
+            <input type="text" id="searchInput" placeholder="Поиск по имени, полу, возрасту или выживанию...">
+            <button id="searchButton">Поиск</button>
+            <button id="resetButton">Сброс</button>
+        </section>
+        <section class="table-container">
+            <table id="passengersTable">
+                <thead>
+                    <tr>
+                        <th>Имя</th>
+                        <th>Пол</th>
+                        <th>Возраст</th>
+                        <th>Номер билета</th>
+                        <th>Каюта</th>
+                        <th>Выжил</th>
+                    </tr>
+                </thead>
+                <tbody id="passengersTableBody"></tbody>
+            </table>
+            <div id="loading">Загрузка данных...</div>
+        </section>
+      </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
